@@ -25,11 +25,11 @@ cd gps-tracker
 npm install
 
 3️⃣ Configurer l'URL du WebSocket
-L'application utilise un fichier .env pour définir l'adresse du serveur WebSocket.
+L'application utilise un fichier .config.json pour définir l'adresse du serveur WebSocket.
 
-Créer un fichier .env à la racine du projet et ajoute :
+Modifier le fichier .config.json à la racine du projet et ajoute :
 
-REACT_APP_SERVER_URL=http://192.168.X.X:3000
+SERVER_URL=http://192.168.X.X:3000
 
     📌 Remplace 192.168.X.X par l’IP de ton serveur NestJS.
     👉 Si le serveur tourne sur le même PC, mets http://localhost:3000.

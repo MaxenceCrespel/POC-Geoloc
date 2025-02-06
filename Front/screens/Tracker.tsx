@@ -10,9 +10,10 @@ import {
 } from "react-native";
 import MapView, { Marker } from "react-native-maps";
 import io from "socket.io-client";
+import config from '../.config.json';
 
 const bikeIcon = require("../assets/scoubit.png");
-const SERVER_URL = process.env.REACT_APP_SERVER_URL || "http://localhost:3000";
+const SERVER_URL = config.SERVER_URL|| "http://localhost:3000";
 
 const socket = io(SERVER_URL);
 
